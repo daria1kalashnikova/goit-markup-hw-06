@@ -309,9 +309,6 @@ footer .social-icons-link:focus {
   align-items: center;
 }
 
-.header-logo {
-}
-
 @media only screen and (min-width: 768px) {
   .header-logo {
     margin-right: 120px;
@@ -424,7 +421,7 @@ footer .social-icons-link:focus {
 
 @media only screen and (min-width: 1158px) {
   .hero-title {
-    margin-buttom: 48px;
+    margin-bottom: 48px;
   }
 }
 
