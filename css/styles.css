@@ -976,3 +976,26 @@ textarea::placeholder {
 }
 
 /* #endregion */
+
+/* #region Mobile menu */
+.mobile-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.mobile-menu-icon {
+  fill: #2f2f37;
+}
+/* #endregion */
