@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- #region Header-->
-    <header class="header">
+    <header class="header" hidden>
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -54,7 +54,7 @@
         </address>
         <button class="mobile-menu-btn" type="button">
           <svg class="mobile-menu-icon" width="24" height="24">
-            <use href="./images/icons.svg#burger_menu"></use>
+            <use href="./images/icons.svg#burger-menu"></use>
           </svg>
         </button>
       </div>
@@ -590,5 +590,64 @@
     </div>
     <script src="./js/modal.js"></script>
     <!-- #endregion Overlay -->
+    <!-- #region Mobile menu -->
+    <div class="mobile-menu is-open">
+      <button class="modal-close mobile-close" type="button">
+        <svg class="modal-svg" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav">
+        <li>
+          <a class="active" href="#">Studio</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-contacts">
+        <li>
+          <a class="active" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="social-icons-list mobile-menu-socials">
+        <li class="social-icons-item">
+          <a class="social-icons-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-icons-item">
+          <a class="social-icons-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-icons-item">
+          <a class="social-icons-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-icons-item">
+          <a class="social-icons-link" href="">
+            <svg class="footer-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- #endregion -->
   </body>
 </html>
