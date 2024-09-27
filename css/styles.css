@@ -110,8 +110,6 @@ address {
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-  outline: 1px solid red;
-  outline-offset: 1px;
 }
 
 @media screen and (min-width: 768px) {
