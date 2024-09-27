@@ -837,19 +837,38 @@ footer .social-icons-list {
   transition: opacity var(--transition), visibility var(--transition);
 }
 
+.modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-overlay:not(.is-open) .modal {
+  transform: translate(-50%, -150%);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
-  padding: 72px 24px 24px 24px;
+  width: 288px;
+  height: 623px;
+  padding: 72px 16px 24px;
   background-color: var(--modal-background);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--transition);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .modal-close {
@@ -880,15 +899,6 @@ footer .social-icons-list {
 .modal-close:hover .modal-svg,
 .modal-close:focus .modal-svg {
   fill: var(--white-background);
-}
-.modal-overlay.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.modal-overlay:not(.is-open) .modal {
-  transform: translate(-50%, -150%);
 }
 
 .modal-title {
