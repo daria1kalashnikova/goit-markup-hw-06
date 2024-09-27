@@ -657,7 +657,7 @@ footer .social-icons-link:focus {
     align-items: flex-start;
     column-gap: 24px;
     row-gap: 72px;
-    padding-left: 92px;
+    padding-left: 108px;
   }
 }
 
@@ -685,11 +685,6 @@ footer .social-icons-link:focus {
 @media screen and (min-width: 768px) {
   .footer-subscribe {
     flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .footer-subscribe {
     gap: 24px;
   }
 }
