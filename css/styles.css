@@ -96,8 +96,6 @@ address {
 .section {
   padding: 96px 0;
   margin: 0 auto;
-  /* padding: 120px 0;
-  margin: 0 auto; */
 }
 
 @media only screen and (min-width: 1158px) {
@@ -232,8 +230,6 @@ address {
   flex-direction: column;
   gap: 72px;
   align-items: center;
-  /* flex-wrap: wrap;
-  gap: 24px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -376,7 +372,7 @@ footer .social-icons-link:focus {
       var(--hero-background),
       var(--hero-background)
     ),
-    url(../images/hero/hero-background.jpg);
+    url(../images/hero/desktop-hero-bg@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -426,14 +422,6 @@ footer .social-icons-link:focus {
 /* Advantages */
 .advantages {
   background-color: var(--white-background);
-}
-
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -681,7 +669,6 @@ footer .social-icons-link:focus {
 .container.footer-container {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   gap: 72px;
   align-items: center;
 }
@@ -692,7 +679,6 @@ footer .social-icons-link:focus {
     flex-wrap: wrap;
     align-items: flex-start;
     column-gap: 24px;
-    row-gap: 72px;
     padding-left: 108px;
   }
 }
@@ -701,7 +687,7 @@ footer .social-icons-link:focus {
   .container.footer-container {
     align-items: baseline;
     gap: 0;
-    padding-left: 0;
+    padding-left: 15px;
   }
 }
 
@@ -772,6 +758,12 @@ footer .social-icons-link:focus {
   display: inline-block;
   text-align: center;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-logo {
+    text-align: left;
+  }
 }
 
 .footer-caption {
