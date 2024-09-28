@@ -450,18 +450,18 @@ footer .social-icons-link:focus {
 }
 
 .advantages-item {
-  width: 288px;
+  flex-basis: calc((100% - 72px * 3) / 4);
 }
 
 @media screen and (min-width: 768px) {
   .advantages-item {
-    width: 356px;
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .advantages-item {
-    width: 264px;
+    flex-basis: calc((100% - 24px * 3) / 4);
   }
 }
 
@@ -578,7 +578,7 @@ footer .social-icons-link:focus {
   color: var(--dark);
 }
 .portfolio-list {
-  row-gap: 48px;
+  gap: 48px;
 }
 
 @media screen and (min-width: 768px) {
