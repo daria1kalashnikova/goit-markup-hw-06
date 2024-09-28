@@ -622,6 +622,10 @@ footer .social-icons-link:focus {
   overflow: hidden;
 }
 
+.portfolio-item-img {
+  width: 100%;
+}
+
 .overlay {
   line-height: 1.5;
   letter-spacing: 0.02em;
